@@ -1,7 +1,7 @@
-prefix=../ffmpeg-emcc/
+prefix=../../ffmpeg-emcc/
 exec_prefix=${prefix}
-libdir=../ffmpeg-emcc//lib
-includedir=../ffmpeg-emcc//include
+libdir=../../ffmpeg-emcc//lib
+includedir=../../ffmpeg-emcc//include
 
 Name: libswresample
 Description: FFmpeg audio resampling library

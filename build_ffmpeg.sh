@@ -1,3 +1,5 @@
+#使用emconfigure来编译ffmpeg源码
+
 if [ -d "ffmpeg-emcc" ]; then
     rm -rf ffmpeg-emcc
     mkdir ffmpeg-emcc
@@ -5,13 +7,12 @@ else
     mkdir ffmpeg-emcc
 fi
 
-cd ffmpeg-4.4.1
-
+cd ./3rdlibs/ffmpeg-4.4.1
 echo "------build ffmpeg-4.4.1 start"
 make clean
 
 emconfigure ./configure --cc=emcc --cxx=em++ --ar=emar  \
- --enable-cross-compile --prefix=../ffmpeg-emcc/ \
+ --enable-cross-compile --prefix=../../ffmpeg-emcc/ \
  --arch=x86_32 --cpu=generic --enable-gpl \
  --enable-version3 --disable-avdevice  \
  --disable-postproc --disable-avfilter \
