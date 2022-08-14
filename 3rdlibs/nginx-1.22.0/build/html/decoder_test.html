@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>网页js调用ffmpeg</title>
+        <!-- <script src="uuid.js"></script> -->
+    </head>
+    <body>
+        </body>
+        
+        <script>
+            function do_simple_test()
+            {
+                Module._initDecoder();
+                console.log("hello decoder!");
+            }    
+        </script>
+        <div><input type="button" onclick="do_simple_test()" value="do_test"></div>
+        <script async src=ffmpeg.js></script>
+    </body>
+</html>

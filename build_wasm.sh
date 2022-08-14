@@ -31,4 +31,5 @@ emcc ${SOURCE_DECODER}/decode_test.c \
 echo "Emscripten end..."
 
 cd wasm
-cp ffmpeg.js ffmpeg.wasm ../wasm_demo
+cp ffmpeg.js ffmpeg.wasm ../3rdlibs/nginx-1.22.0/build/html
+

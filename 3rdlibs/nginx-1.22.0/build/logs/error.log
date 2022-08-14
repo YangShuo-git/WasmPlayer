@@ -1,0 +1,24 @@
+2022/08/14 04:10:58 [warn] 16039#0: duplicate extension "wasm", content type: "application/wasm", previous content type: "application/wasm" in /home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/conf/mime.types:57
+2022/08/14 04:11:33 [emerg] 16124#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2022/08/14 04:11:33 [emerg] 16124#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2022/08/14 04:11:33 [emerg] 16124#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2022/08/14 04:11:33 [emerg] 16124#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2022/08/14 04:11:33 [emerg] 16124#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2022/08/14 04:11:33 [emerg] 16124#0: still could not bind()
+2022/08/14 04:11:51 [notice] 16205#0: signal process started
+2022/08/14 04:18:02 [notice] 16376#0: signal process started
+2022/08/14 04:24:00 [error] 16473#0: *3 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/favicon.ico" failed (2: No such file or directory), client: 192.168.2.8, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.2.6", referrer: "http://192.168.2.6/"
+2022/08/14 04:24:16 [error] 16473#0: *3 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/favicon.ico" failed (2: No such file or directory), client: 192.168.2.8, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.2.6", referrer: "http://192.168.2.6/"
+2022/08/14 04:25:22 [error] 16473#0: *7 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/lqs&amp;ys.htm" failed (2: No such file or directory), client: 192.168.2.8, server: localhost, request: "GET /lqs&amp;ys.htm HTTP/1.1", host: "192.168.2.6"
+2022/08/14 04:25:22 [error] 16473#0: *7 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/favicon.ico" failed (2: No such file or directory), client: 192.168.2.8, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.2.6", referrer: "http://192.168.2.6/lqs&amp;ys.htm"
+2022/08/14 04:25:22 [error] 16473#0: *7 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/lqs&amp;ys.html" failed (2: No such file or directory), client: 192.168.2.8, server: localhost, request: "GET /lqs&amp;ys.html HTTP/1.1", host: "192.168.2.6"
+2022/08/14 04:25:22 [error] 16473#0: *7 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/favicon.ico" failed (2: No such file or directory), client: 192.168.2.8, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.2.6", referrer: "http://192.168.2.6/lqs&amp;ys.html"
+2022/08/14 04:25:24 [error] 16473#0: *7 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/favicon.ico" failed (2: No such file or directory), client: 192.168.2.8, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.2.6", referrer: "http://192.168.2.6/lqs&ys.html"
+2022/08/14 17:18:28 [error] 16473#0: *18 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/decoder_test.html" failed (2: No such file or directory), client: 192.168.2.5, server: localhost, request: "GET /decoder_test.html HTTP/1.1", host: "192.168.2.6"
+2022/08/14 17:20:24 [error] 16473#0: *20 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/decoder_test.html" failed (2: No such file or directory), client: 192.168.2.5, server: localhost, request: "GET /decoder_test.html HTTP/1.1", host: "192.168.2.6"
+2022/08/14 17:20:33 [error] 16473#0: *20 "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/index.html" is not found (2: No such file or directory), client: 192.168.2.5, server: localhost, request: "GET / HTTP/1.1", host: "192.168.2.6"
+2022/08/14 17:20:36 [error] 16473#0: *20 "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/index.html" is not found (2: No such file or directory), client: 192.168.2.5, server: localhost, request: "GET / HTTP/1.1", host: "192.168.2.6"
+2022/08/14 17:20:37 [error] 16473#0: *20 "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/index.html" is not found (2: No such file or directory), client: 192.168.2.5, server: localhost, request: "GET / HTTP/1.1", host: "192.168.2.6"
+2022/08/14 17:22:05 [error] 16473#0: *22 "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/index.html" is not found (2: No such file or directory), client: 192.168.2.5, server: localhost, request: "GET / HTTP/1.1", host: "192.168.2.6"
+2022/08/14 17:40:15 [error] 90351#0: *6 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/favicon.ico" failed (2: No such file or directory), client: 192.168.2.5, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.2.6", referrer: "http://192.168.2.6/decoder_test.html"
+2022/08/14 18:27:09 [notice] 91705#0: signal process started
