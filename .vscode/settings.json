@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "avcodec.h": "c"
+        "avcodec.h": "c",
+        "swresample.h": "c",
+        "swscale.h": "c",
+        "imgutils.h": "c",
+        "avformat.h": "c",
+        "stdio.h": "c"
     }
 }

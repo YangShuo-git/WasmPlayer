@@ -6,8 +6,15 @@ export FFMPEG_PATH=./ffmpeg-emcc
 export WASM_PATH=./wasm
 
 export EXPORTED_FUNCTIONS="[ \
-    '_initDecoder'
+    '_initDecoder', \
+    '_test'
 ]"
+
+# export EXPORTED_FUNCTIONS="[ \
+#     '_openDecoder', \
+#     '_closeDecoder', \
+#     '_decodeData'
+# ]"
 
 echo "Emscripten start..."
 emcc ${SOURCE_DECODER}/decode_test.c \
@@ -23,13 +30,16 @@ emcc ${SOURCE_DECODER}/decode_test.c \
     -s ALLOW_MEMORY_GROWTH=1 \
     -s NO_EXIT_RUNTIME=1 \
     -s EXPORTED_FUNCTIONS="${EXPORTED_FUNCTIONS}" \
-    -s EXPORTED_RUNTIME_METHODS="['ccall', 'addFunction']" \
-    -s RESERVED_FUNCTION_POINTERS=14 \
+    -s EXPORTED_RUNTIME_METHODS="[ 'ccall' ]" \
     -s ASSERTIONS=0 \
+    -s ASSERTIONS=1 \
     -o ${WASM_PATH}/ffmpeg.js
 
 echo "Emscripten end..."
 
 cd wasm
 cp ffmpeg.js ffmpeg.wasm ../3rdlibs/nginx-1.22.0/build/html
+
+# cd wasm
+# cp h2642yuv.js h2642yuv.wasm ../3rdlibs/nginx-1.22.0/build/html
 
