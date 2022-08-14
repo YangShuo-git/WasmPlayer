@@ -28,11 +28,8 @@ emcc ${SOURCE_DECODER}/decode_test.c \
     -s WASM=1 \
     -s TOTAL_MEMORY=${TOTAL_MEMORY} \
     -s ALLOW_MEMORY_GROWTH=1 \
-    -s NO_EXIT_RUNTIME=1 \
     -s EXPORTED_FUNCTIONS="${EXPORTED_FUNCTIONS}" \
     -s EXPORTED_RUNTIME_METHODS="[ 'ccall' ]" \
-    -s ASSERTIONS=0 \
-    -s ASSERTIONS=1 \
     -o ${WASM_PATH}/ffmpeg.js
 
 echo "Emscripten end..."
