@@ -6,8 +6,7 @@ export FFMPEG_PATH=./ffmpeg-emcc
 export WASM_PATH=./wasm
 
 export EXPORTED_FUNCTIONS="[ \
-    '_initDecoder', \
-    '_test'
+    '_initDecoder'
 ]"
 
 # export EXPORTED_FUNCTIONS="[ \
@@ -29,7 +28,8 @@ emcc ${SOURCE_DECODER}/decode_test.c \
     -s TOTAL_MEMORY=${TOTAL_MEMORY} \
     -s ALLOW_MEMORY_GROWTH=1 \
     -s EXPORTED_FUNCTIONS="${EXPORTED_FUNCTIONS}" \
-    -s EXPORTED_RUNTIME_METHODS="[ 'ccall' ]" \
+    -s EXPORTED_RUNTIME_METHODS="[ 'ccall', 'addFunction' ]" \
+    -s RESERVED_FUNCTION_POINTERS=14 \
     -o ${WASM_PATH}/ffmpeg.js
 
 echo "Emscripten end..."

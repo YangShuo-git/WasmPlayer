@@ -34,7 +34,3 @@ void initDecoder()
 	   }
 }
 
-int test()
-{
-	return 9;
-}

@@ -1,0 +1,14 @@
+prefix=../../web_server/ffmpeg
+exec_prefix=${prefix}
+libdir=../../web_server/ffmpeg/lib
+includedir=../../web_server/ffmpeg/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.110.100
+Requires: libavutil >= 56.70.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
