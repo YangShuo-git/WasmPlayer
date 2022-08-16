@@ -9,9 +9,9 @@
 // ffmpeg请直接参考 example里面的各种范例:
 typedef struct 
 {
-    AVCodecContext  *c;             // 用于解码
-    AVPacket        *raw_pkt;       // 存储js传递进来的h264数据.
-    AVFrame         *decode_frame;  // 存储解码成功后的YUV数据.
+    AVCodecContext  *c;             // 解码其上下文
+    AVPacket        *raw_pkt;       // 存储js传递进来的h264数据
+    AVFrame         *decode_frame;  // 存储解码成功后的YUV数据
 
     struct SwsContext* swsCtx;      // 格式转换,有些解码后的数据不一定是YUV格式的数据
     uint8_t         *sws_data;      // 
@@ -34,7 +34,7 @@ LPJSDecodeHandle initDecoder();
 /**
 * 分配len大小的内存,并把内存的句柄
 */
-uint8_t*  GetBuffer(LPJSDecodeHandle handle,int len);
+uint8_t* GetBuffer(LPJSDecodeHandle handle,int len);
 
 /**
 * 解码一帧数据
@@ -56,9 +56,6 @@ int GetHeight(LPJSDecodeHandle handle);
 * 获取渲染后的数据
 */
 uint8_t* GetRenderData(LPJSDecodeHandle handle);
-
-
-
 
 
 LPJSDecodeHandle initDecoder()
@@ -89,16 +86,16 @@ LPJSDecodeHandle initDecoder()
 
         //handle->c->thread_count = 5;
 
-        if(avcodec_open2(handle->c,codec,NULL) < 0) 
+        if(avcodec_open2(handle->c, codec, NULL) < 0) 
         {
             fprintf(stderr, "Could not open codec\n");
             break;
         }
 
-        // 我们最大支持到1920 * 1080,保存解码后的YUV数据，然后返回给前端!
+        // 这里最大支持到1920 * 1080,保存解码后的YUV数据，然后返回给前端!
         int max_width = 1920;
         int max_height = 1080;
-        handle->yuv_buffer = malloc( max_width * max_height * 3 / 2);
+        handle->yuv_buffer = malloc( max_width * max_height * 3 / 2);   //为什么要 *3/2 ？
 
         fprintf(stderr,"ffmpeg h264 decode init success.\n");
         return handle;

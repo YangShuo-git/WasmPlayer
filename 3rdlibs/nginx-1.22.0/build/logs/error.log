@@ -30,3 +30,4 @@
 2022/08/15 20:00:29 [emerg] 7061#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
 2022/08/15 20:00:29 [emerg] 7061#0: still could not bind()
 2022/08/15 20:16:33 [error] 3703#0: *1 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/favicon.ico" failed (2: No such file or directory), client: 192.168.2.5, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.2.6", referrer: "http://192.168.2.6/decoder_test.html"
+2022/08/17 01:11:36 [error] 3703#0: *7 open() "/home/baiyang/WasmPlayer/3rdlibs/nginx-1.22.0/build/html/favicon.ico" failed (2: No such file or directory), client: 192.168.2.5, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.2.6", referrer: "http://192.168.2.6/decoder.html"

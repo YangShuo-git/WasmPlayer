@@ -34,5 +34,6 @@ echo "Emscripten end..."
 
 cd wasm
 cp ffmpeg.js ffmpeg.wasm ../3rdlibs/nginx-1.22.0/build/html
+cp ffmpeg.js ffmpeg.wasm ../web_client
 
 

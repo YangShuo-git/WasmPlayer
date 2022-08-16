@@ -5,11 +5,8 @@
 #include <atomic>
 #include <map>
 
-
 #include "ws_c_lockmutex.h"
 #include "ws_h264_session.h"
-
-
 
 
 /**
